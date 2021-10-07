@@ -1,0 +1,144 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+strong,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+header,
+nav{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+header,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aaffee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: limegreen;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 70%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #b5e6e7;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #ffccff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.pricing-features {
+  margin: 50px 0px 25px;
+  color: #000000;
+}
+
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px;
+  border-top: 1px solid #b5e6e7;
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #b5e6e7;
+}
+
+.pricing-price {
+  color: #140f61;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #140f61;
+  border-radius: 10px;
+  color: #140f61;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px;
+  background-color: lightgreen
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #009ffb;
+  color: white;
+  border: 1px solid #d8cb79;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #b5e6e7;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
